@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Inputs Básicos</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+     
+        div {
+            border: solid 1px #000;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Inputs Básicos</h1>
+    </div>
+    
+    <div>
+        <form action="https://www.globo.com" method="post">
+
+            <label>Nome</label><br>
+            <input placeholder="Insira seu nome" type="text" name="nome" class="" id=""/><br>
+
+            <label>Senha</label><br>
+            <input placeholder="Insira sua senha" type="password" name="senha"><br>
+
+            <br>
+
+            <label>Time</label>
+            <input type="text" placeholder="Insira seu time" name="time" list="lista_times"/>
+            <datalist id="lista_times">
+                <option value="Santos"></option>
+                <option value="Palmeiras"></option>
+                <option value="Corinthias"></option>
+                <option value="Flamengo"></option>
+            </datalist><br>
+
+
+            <label>Radio</label>
+            <input type="radio" name="opcao"/>A
+            <input type="radio" name="opcao"/>B
+            <input type="radio" name="opcao"/>C
+            <br>
+            <label>Multipla Escolha</label>
+            <input type="checkbox" name="multiplo">1
+            <input type="checkbox" name="multiplo">2
+            <input type="checkbox" name="multiplo">3
+
+            <br>
+            <label>Texto</label><br>
+            <textarea name="texto" id="" cols="30" rows="10"></textarea><br>
+
+            <label>Arquivo</label>
+            <input type="file" name="arquivo" /><br>
+
+            <label>Sexo</label><br>
+            <select name="sexo" id="">
+                <option value="">Selecione</option>
+                <option value="Masculino">Masculino</option>
+                <option selected value="Feminino">Feminino</option>
+            </select>
+            <br><br>
+            <label>Marcas de Carros</label><br>
+            <select name="carro" id="">
+                <optgroup label="Alemaes">
+                    <option value="mercedes">mercedes</option>
+                    <option value="audi">audi</option>
+                </optgroup>
+                <optgroup label="Suecos">
+                    <option value="volvo">volvo</option>
+                    <option value="saab">saab</option>
+                </optgroup>
+            </select>
+            <br><br><br>
+
+            <input type="button" value="Botão sem ação"/> <br>
+            <input type="submit" value="Enviar"/>
+
+        </form>
+    </div>
+</body>
+</html>

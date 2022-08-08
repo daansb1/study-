@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Crie seu Cadastro</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        div {
+            border: solid 1px #000;
+        }
+    </style>
+</head>
+<body>
+    
+     <div>
+        <h1>Americanas</h1>
+     </div>   
+    
+
+    <div>
+        <h1>criar seu cadastro</h1>
+        <h2>veja seus pedidos de forma fácil, compre mais rápido e tenha uma experiência personalizada :)</h2>
+        <span>*campos obrigatórios</span>
+
+        <form method="post" enctype="multipart/form-data">
+            <label>nome completo</label><br>
+            <input type="text" name="nome" class="" id=""/><br>
+
+            <label>gênero</label><br>
+            <span>pra gente te conhecer um pouquinho melhor :)</span><br>
+                    <input type="radio" name="feminino"/>Feminino
+                    <input type="radio" name="masculino"/>Masculino
+                    <input type="radio" name="na"/>Não Informar
+                    <br>
+
+            <label>data de nascimento</label><br>
+            <span>necessário pra identificar a maioridade, no formato DD/MM/AAAA</span><br>
+            <input type="date" name="data" class="" id=""/><br>
+            
+            <label>CPF</label><br>
+            <span>necessário pra emissão das Notas Fiscais</span><br>
+            <input type="number" name="cpf" class="" id=""/><br>
+            
+            <a href="">é pessoa jurídica? conheça a americanas empresas</a><br>
+
+            <label>telefone</label><br>
+            <span>caso a gente precise entrar em contato sobre seus pedidos</span><br>
+            <input type="tel" name="telefone" class="" id=""/><br>
+
+            <label></label>
+                <input type="checkbox" name="multiplo1">receber notificações por Whatsapp
+                <br>
+            
+            <label>e-mail</label><br>
+                <input type="email" name="email">
+                <br>
+
+            <label></label><br>
+                <input  type="checkbox" name="multiplo2">receber e-mails promocionais
+                <br>
+                
+            <label>senha</label><br>
+            <span>precisa ter entre 6 e 20 caracteres</span><br>
+                <input  type="password" name="senha"><br>  
+                
+                
+            <label></label><br>
+                <input  type="checkbox" name="multiplo3">compartilhar meus dados com parceiros para ter conteúdos personalizados, <a href="">veja como funciona</a>.
+                <br>
+                
+            <button  type="submit" class="">criar seu cadastro</button><br> 
+            
+            Não se preocupe, nosso site é seguro! Ao criar o seu cadastro, você concorda com a nossa <b><a href="" >Política de Privacidade</a></b><br>
+            já tem cadastro? <b><a href="">entrar</a></b>
+        </form>
+    </div>
+</body>
+</html>
