@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CSS embarcado</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body{
+            color: black;
+        }
+        h1{
+            color: red;
+            font-size: 45px;
+        }
+        input {
+            display: block;
+            margin-bottom: 20px;
+            background-color: chartreuse;
+            
+        }
+        label {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .tracejado{
+            border: dashed 2px #000;
+            background-color: aqua;
+        }
+        #campo_email {
+            height: 45px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo CSS 2</h1>
+
+    <form action="" method="post">
+        <label> Nome </label>
+        <input type="text" name="nome">
+
+        <label> E-mail </label>
+        <input class="tracejado" id="campo_email" type="email" name="email">
+
+        <label> Senha </label>
+        <input class="tracejado" type="password" name="senha">
+
+    </form>
+</body>
+</html>
