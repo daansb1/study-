@@ -10,43 +10,94 @@
     <style>
         div {
             border: solid 1px #000;
+            text-align: center;
+        }
+        #titulo {
+            background-color: red;
+            display: block;            
+            
+        }
+
+        #titulo1 {
+            text-decoration-color: #666666;
+            color: 36px arial;
+            margin: 29.88px 0px 0px;
+
+        }
+        h2 {
+            color: #666666;
+            font: 18px arial;
+            margin: 18px 0px 0px;
+        }
+        span {
+            color: #333333;
+            font: 12px arial;
+            margin: 12px 0px -16px
+        }
+
+        button {
+            color: #FFFFFF;
+            font: 16px sans-serif;
+            background: #F80032;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        form {
+            text-align: center;
+            position: relative;
+        }
+        input {
+            background: #FFFFFF;
+            margin: 0px;
+            padding: 0px;
+            border-radius: 10px 10px 10px 10px;
+            font-size: 24px;
+        
+       
+
+        }
+        #tesxt {
+            color: red;
+
         }
     </style>
 </head>
 <body>
     
-     <div>
-        <h1>Americanas</h1>
+     <div id="titulo">
+        <h1 >Americanas</h1>
      </div>   
     
 
     <div>
-        <h1>criar seu cadastro</h1>
-        <h2>veja seus pedidos de forma fácil, compre mais rápido e tenha uma experiência personalizada :)</h2>
-        <span>*campos obrigatórios</span>
+        <h1 id="titulo1" >criar seu cadastro</h1>
+        <h2>veja seus pedidos de forma fácil, compre mais rápido e tenha uma<br>
+             experiência personalizada :)</h2>
+        <span><span id="tesxt">*</span>campos obrigatórios</span>
 
         <form method="post" enctype="multipart/form-data">
-            <label>nome completo</label><br>
+            <label><span id="tesxt">*</span>nome completo</label><br>
             <input type="text" name="nome" class="" id=""/><br>
 
-            <label>gênero</label><br>
+            <label><span id="tesxt">*</span>gênero</label><br>
             <span>pra gente te conhecer um pouquinho melhor :)</span><br>
                     <input type="radio" name="feminino"/>Feminino
                     <input type="radio" name="masculino"/>Masculino
                     <input type="radio" name="na"/>Não Informar
                     <br>
 
-            <label>data de nascimento</label><br>
+            <label><span id="tesxt">*</span>data de nascimento</label><br>
             <span>necessário pra identificar a maioridade, no formato DD/MM/AAAA</span><br>
             <input type="date" name="data" class="" id=""/><br>
             
-            <label>CPF</label><br>
+            <label><span id="tesxt">*</span>CPF</label><br>
             <span>necessário pra emissão das Notas Fiscais</span><br>
             <input type="number" name="cpf" class="" id=""/><br>
             
             <a href="">é pessoa jurídica? conheça a americanas empresas</a><br>
 
-            <label>telefone</label><br>
+            <label><span id="tesxt">*</span>telefone</label><br>
             <span>caso a gente precise entrar em contato sobre seus pedidos</span><br>
             <input type="tel" name="telefone" class="" id=""/><br>
 
@@ -54,7 +105,7 @@
                 <input type="checkbox" name="multiplo1">receber notificações por Whatsapp
                 <br>
             
-            <label>e-mail</label><br>
+            <label><span id="tesxt">*</span>e-mail</label><br>
                 <input type="email" name="email">
                 <br>
 
@@ -62,7 +113,7 @@
                 <input  type="checkbox" name="multiplo2">receber e-mails promocionais
                 <br>
                 
-            <label>senha</label><br>
+            <label><span id="tesxt">*</span>senha</label><br>
             <span>precisa ter entre 6 e 20 caracteres</span><br>
                 <input  type="password" name="senha"><br>  
                 
