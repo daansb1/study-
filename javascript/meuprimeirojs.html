@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro JS</title>
+
+    <script>
+
+        alert('Seja Bem vindo');
+
+        function exibirAlerta(){
+           // alert('Meu primeiro Alerta');
+           // document.getElementById('box').innerHTML = 'Meu primeiro Alerta';
+           // console.log('Minha primeira mensagem no console');
+           confirm('Você concorda com isso?');
+        }
+    </script> 
+
+    <style>
+        #box {
+            display: block;
+            width: 500px;
+            height: 500px;
+            color: aquamarine;
+            background-color: brown;
+        }
+    </style>
+
+    <!-- <script src="exercicio1.js"></script> -->
+
+</head>
+<body>
+    <h1>Meu primeiro JS</h1>
+    <input onclick="javascript:exibirAlerta()" type="button" value="Enviar">
+        
+    <div id="box">
+        <script>document.write('Aqui é um texto que vem do javascript')</script><br>
+        <script>document.write('7 + 3 = ', 7+3)</script>
+    </div>
+</body>
+</html>
