@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #box1 {
+            background-color: brown;
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+        }
+
+        .paragrafo {
+            background-color: aquamarine;
+            font-size: 18px;
+            padding: 20px;
+        }
+
+
+    </style>
+
+    <script>
+
+        function funcaoTeste(){
+            //alert('Estou aqui');
+           document.getElementById("box1").style.backgroundColor = "blue";
+           document.getElementById("box1").style.textAlign = "center";
+           document.getElementById("box1").style.color = "#FFF";
+
+           document.getElementsByClassName('paragrafo')[0].style.backgroundColor = "red";
+           document.getElementsByClassName('paragrafo')[1].style.backgroundColor = "blue";
+           document.getElementsByClassName('paragrafo')[2].style.backgroundColor = "yellow";
+
+
+        }
+
+    </script>
+
+</head>
+<!-- <body onload="javascript:funcaoTeste()"> -->
+    <body>
+    <h1 onmouseover="javascript:funcaoTeste()">Seletores</h1>
+
+    <div id="box1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus officiis, soluta suscipit vel et architecto nihil minima voluptatum, veritatis dolores sapiente placeat. Unde odit atque, exercitationem facilis vitae voluptatum nulla!
+    </div>
+
+
+    <input type="button" value="Acionar" onclick="javascript:funcaoTeste();">
+
+    <p class="paragrafo">Paragrafo 1</p> <!-- 0 -->
+    <p class="paragrafo">Paragrafo 2</p> <!-- 1 -->
+    <p class="paragrafo">Paragrafo 3</p> <!-- 2 -->
+    
+</body>
+</html>
